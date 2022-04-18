@@ -20,6 +20,14 @@ class RidesFragment : BaseFragment<MainViewModel, FragmentRidesBinding>(
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setupTabItems()
+    }
+
+    private fun setupTabItems() {
+        binding.tlRides.addTab(binding.tlRides.newTab().setText("Nearest"))
+        binding.tlRides.addTab(binding.tlRides.newTab().setText("Upcoming"))
+        binding.tlRides.addTab(binding.tlRides.newTab().setText("Past"))
+
 
     }
 }

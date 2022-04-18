@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Edvora</string>
+    <string name="rides_colon">Rides:</string>
+    <string name="filters">Filters</string>
+    <string name="ride_id_format">Ride Id: %1$s</string>
+    <string name="origin_station_format">Origin Station: %1$d</string>
+    <string name="station_path_format">station_path: %1$s</string>
+    <string name="date_format">Date: %1$s</string>
+    <string name="distance_format">Date: %1$d</string>
 </resources>
