@@ -1,6 +1,8 @@
 package com.careers.extensions
 
 import android.content.Context
+import android.content.res.Configuration
+import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
@@ -35,4 +37,9 @@ fun Context.isNetworkAvailable(): Boolean {
         }
     }
     return connectivityManager.activeNetworkInfo?.isAvailable ?: false
+}
+
+fun Context.isDarkTheme(): Boolean {
+    return resources.configuration.uiMode and
+            Configuration.UI_MODE_NIGHT_MASK == UI_MODE_NIGHT_YES
 }

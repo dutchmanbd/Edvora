@@ -9,15 +9,29 @@ plugins {
 android {
     compileSdk 31
 
+    signingConfigs {
+        release {
+            storeFile file('/home/dutchman/AndroidStudioProjects/android_apk_keystore/edvora_keystore.jks')
+            storePassword 'edvora2022'
+            keyPassword 'edvora2022'
+            keyAlias 'edvoraalias'
+        }
+    }
+
     defaultConfig {
         applicationId "com.careers.edvora"
         minSdk 21
         targetSdk 31
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "BASE_URL", BASE_URL)
+
+        signingConfig signingConfigs.release
     }
+
+
 
     buildTypes {
         release {

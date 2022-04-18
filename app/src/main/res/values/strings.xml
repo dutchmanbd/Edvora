@@ -6,5 +6,12 @@
     <string name="origin_station_format">Origin Station: %1$d</string>
     <string name="station_path_format">station_path: %1$s</string>
     <string name="date_format">Date: %1$s</string>
-    <string name="distance_format">Date: %1$d</string>
+    <string name="distance_format">Distance: %1$d</string>
+    <string name="nearest">Nearest</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="past">Past</string>
+    <string name="upcoming_format">Upcoming(%1$d)</string>
+    <string name="past_format">Past(%1$d)</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
 </resources>
